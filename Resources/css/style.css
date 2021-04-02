@@ -208,10 +208,20 @@ header {
 
 .logo {
     height: 100px;
-    width: 100px;
+    width: auto;
     margin-top: 20px;
     float:left;
 }
+
+.logo-black {
+    height: 50px;
+    width: auto;
+    margin: 5px 0;
+    float:left;
+    display: none;
+}
+
+/* Main Navi */
 
 .main-nav {
     float:right;
@@ -230,7 +240,7 @@ header {
     text-decoration: none;
     text-transform: uppercase;
     font-size:90%;
-    border-bottom: 1.5px solid transparent;
+    border-bottom: 2px solid transparent;
     padding: 8px 0;
     -webkit-transition: border-bottom 0.2s;
     transition: border-bottom 0.2s;
@@ -238,8 +248,31 @@ header {
 
 .main-nav li a:active,
 .main-nav li a:hover {
-    border-bottom: 1.5px solid #de9200;
+    border-bottom: 2px solid #de9200;
 }
+
+/* Sticky Navi */
+
+.sticky {
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    background-color: rgba(255,255,255,0.95);
+    box-shadow: 0 2px 2px #f2f2f2;
+	z-index: 9999;
+}
+
+.sticky .main-nav {margin-top: 20px;}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+    padding: 15px 0;
+    color: #434343;
+}
+
+.sticky .logo {display: none;}
+.sticky .logo-black {display: block;}
 
 /* --------------------------------------------- */
 /* -------------------MEALS--------------------- */
