@@ -95,16 +95,16 @@ $(document).ready(function () {
 
     $('.js--nav-icon').click(function() {
         var nav = $('.js--main-nav');
-        var icon = $('.js--nav-icon ion-icon');
+        var icon = $('.js--nav-icon i');
 
         nav.slideToggle(200);
 
-        if (icon.hasClass('menu-pop')) {
-            icon.addClass('close-outline');
-            icon.removeClass('menu-pop');
+        if (icon.hasClass('gg-menu-cake')) {
+            icon.addClass('gg-close-r');
+            icon.removeClass('gg-menu-cake');
         } else {
-            icon.addClass('menu-pop');
-            icon.removeClass('close-outline');
+            icon.addClass('gg-menu-cake');
+            icon.removeClass('gg-close-r');
         }
     });
 

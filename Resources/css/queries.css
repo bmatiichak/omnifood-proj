@@ -57,7 +57,7 @@
         display: inline-block;
     }
 
-    .mobile-nav-icon ion-icon {
+    .mobile-nav-icon i {
         font-size: 200%;
         font-weight: 400;
     }
@@ -88,9 +88,16 @@
     .sticky .main-nav li a:visited { padding: 10px 0; }
 
 
-    .sticky .mobile-nav-icon { margin-top: 15px;}
-    .sticky .mobile-nav-icon ion-icon { color:#434343; }
+    .sticky .mobile-nav-icon {
+        padding: 2px;
+        margin-top: 20px;
+    }
+    .sticky .mobile-nav-icon i { color:#434343; }
 
+
+    .sticky .mobile-nav-icon .gg-menu-cake {
+        width: 21px;
+    }
     .long-copy {
         width: 100%;
         margin: 0%;
